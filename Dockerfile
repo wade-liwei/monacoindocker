@@ -61,6 +61,7 @@ maxconnections=16                       \n\
 logtimestamps=1                         \n\
 logips=1                                \n\
                                         \n\
+rpcbind=0.0.0.0                         \n\
 rpcallowip=0.0.0.0/0                    \n\
 rpctimeout=15                           \n\
 rpcclienttimeout=15                     \n\
