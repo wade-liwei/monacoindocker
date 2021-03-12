@@ -52,7 +52,7 @@ dbcache=256                             \n\
 maxmempool=512                          \n\
                                         \n\
 port=9401                               \n\
-rpcport=9402                          \n\
+rpcport=9402                            \n\
                                         \n\
                                         \n\
 listen=1                                \n\
@@ -61,9 +61,12 @@ maxconnections=16                       \n\
 logtimestamps=1                         \n\
 logips=1                                \n\
                                         \n\
-rpcallowip=127.0.0.1                    \n\
+rpcallowip=0.0.0.0/0                    \n\
 rpctimeout=15                           \n\
-rpcclienttimeout=15                     \n" > /opt/blockchain/config/monacoin.conf
+rpcclienttimeout=15                     \n\
+                                        \n\
+rpcuser=monacoin                        \n\
+rpcpassword=20210312                    \n" > /opt/blockchain/config/monacoin.conf
 
 WORKDIR /opt/blockchain/
 VOLUME ["/opt/blockchain/config", "/opt/blockchain/data"]
